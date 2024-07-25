@@ -1,0 +1,6 @@
+{
+    "version" : 2,
+    "builds" : [
+        {"src": "boty.py", "use": "@vercel/python"}
+    ]  
+}
