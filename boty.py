@@ -3,7 +3,14 @@ from discord.ext import commands
 import os
 from dotenv import load_dotenv
 import random
+import gdown # type: ignore
 
+url = 'https://drive.google.com/u/0/uc?id=1J-2CANlM9I9tQF8hlDVAzB8LynaK1RiR'
+output = 'token.txt'
+gdown.download(url, output, quiet=False)
+
+with open('token.txt') as f:
+    TOKEN = f.readline()
 # Load environment variables from .env file
 load_dotenv()
 
