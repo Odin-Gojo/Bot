@@ -1,7 +1,6 @@
 import discord
 from discord.ext import commands
 import os
-from dotenv import load_dotenv
 import random
 import gdown # type: ignore
 
@@ -11,14 +10,9 @@ gdown.download(url, output, quiet=False)
 
 with open('token.txt') as f:
     TOKEN = f.readline()
-# Load environment variables from .env file
-load_dotenv()
-
-# Set up the bot token
-TOKEN = os.getenv('BOT_TOKEN')
 
 # Create a new bot instance
-bot = commands.Bot(command_prefix='!')
+bot = commands.Bot(command_prefix='x')
 
 # Set up the bot's presence
 @bot.event
