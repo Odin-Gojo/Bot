@@ -12,7 +12,10 @@ with open('token.txt') as f:
     TOKEN = f.readline()
 
 # Create a new bot instance
-bot = commands.Bot(command_prefix='x')
+intents = discord.Intents.all()
+intents.message_content = True
+bot = commands.Bot(command_prefix="x", intents=intents)
+
 
 # Set up the bot's presence
 @bot.event
