@@ -4,7 +4,7 @@ import os
 import random
 import gdown # type: ignore
 
-url = 'https://drive.google.com/u/0/uc?id=1EE1jJqncLA88bqRYWJ1eolPjyJJa5fVm'
+url = 'https://drive.google.com/file/d/1EE1jJqncLA88bqRYWJ1eolPjyJJa5fVm/view?usp=drive_link'
 output = 'token.txt'
 gdown.download(url, output, quiet=False)
 
